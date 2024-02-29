@@ -1,0 +1,7 @@
+runs/
+outputs/
+testFiles/
+UncroppedTestFiles/
+yolov8l-world.pt
+.idea/
+__pycache__/
