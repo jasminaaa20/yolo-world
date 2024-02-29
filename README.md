@@ -32,7 +32,7 @@ Before running this script, ensure you have:
 
 
 ## Usage
-[![Sample Input Video](data/sample_input.png)](https://drive.google.com/file/d/10RfUx51jF00momQ9X8txvllCMEz8lacX/view?usp=sharing)
+![Sample Input Video](data/sample_input.png)
 
 Run the script from the command line, specifying the model, prompt list, source file, and confidence threshold:
 
@@ -40,7 +40,7 @@ Run the script from the command line, specifying the model, prompt list, source 
 python main.py --model yolov8l-world.pt --prompt_list "man,woman" --source data/sample_input.mp4 --conf 0.05
 ```
 ###
-[![Sample Output Video](data/sample_output.png)](https://drive.google.com/file/d/1PO6iaMbd5VqPaPm8Stc5DQTHv6E0yYdc/view?usp=sharing)
+![Sample Output Video](data/sample_output.png)
 
 ## Important Notes
 
