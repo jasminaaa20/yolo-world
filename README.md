@@ -34,7 +34,7 @@ Before running this script, ensure you have:
 Run the script from the command line, specifying the model, prompt list, source file, and confidence threshold:
 
 ```
-python main.py --model yolov8l-world.pt --prompt_list "person, car" --source ./data/sample.jpg --conf 0.1
+python main.py --model yolov8l-world.pt --prompt_list "man,woman" --source data/sample_input.mp4 --conf 0.05
 ```
 
 ## Important Notes
