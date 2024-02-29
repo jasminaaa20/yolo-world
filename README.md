@@ -37,6 +37,11 @@ Run the script from the command line, specifying the model, prompt list, source 
 python main.py --model yolov8l-world.pt --prompt_list "person, car" --source ./data/sample.jpg --conf 0.1
 ```
 
+## Important Notes
+
+- **Detection Confidence for Non-COCO Classes:** YOLO-WORLD's detection confidence for classes not present in the COCO dataset might be lower, necessitating a lower confidence threshold by default. This approach, however, might result in double detection of objects.
+- **Agnostic NMS:** To mitigate the issue of double detections, `agnostic_nms` is set to true, enabling more precise object detection without redundant overlaps.
+
 ## YOLO-WORLD Overview
 
 YOLO-WORLD introduces a novel framework that significantly enhances the open-vocabulary detection capabilities of the traditional YOLO detectors. By incorporating a Re-parameterizable Vision-Language Path Aggregation Network (RepVL-PAN) and region-text contrastive loss, YOLO-WORLD can efficiently detect a wide range of objects described by textual prompts in real-time. This model is pre-trained on large-scale datasets, including detection, grounding, and image-text datasets, making it capable of zero-shot detection with high efficiency and accuracy on standard benchmarks.
@@ -56,4 +61,4 @@ YOLO-WORLD has been developed and tested by leading researchers and has shown re
 
 ## Contributing
 
-We welcome contributions to improve the script or documentation. Please adhere to the contribution guidelines provided in the GitHub repository.
+We welcome contributions to improve the script or documentation.
