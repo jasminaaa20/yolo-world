@@ -56,7 +56,7 @@ YOLO-WORLD introduces a novel framework that significantly enhances the open-voc
 
 YOLO-WORLD has been developed and tested by leading researchers and has shown remarkable performance in open-vocabulary object detection tasks. For detailed information on YOLO-WORLD, including its architecture, training, and performance metrics, refer to the original research paper and GitHub repository:
 
-- Research Paper: [YOLO-World: Real-Time Open-Vocabulary Object Detection](https://arxiv.org/abs/2401.17270)
+- Research Paper: [YOLO-World: Real-Time Open-Vocabulary Object Detection](2401.17270.pdf)
 - GitHub Repository: [AILab-CVC/YOLO-World](https://github.com/AILab-CVC/YOLO-World)
 
 ## Contributing
