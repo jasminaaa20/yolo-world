@@ -7,6 +7,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run YOLO model with command line arguments")
 
     # Add arguments
+    parser.add_argument('--model', type=str, help='Model name', default='yolov8l-world.pt')
     parser.add_argument('--prompt_list', nargs='+', help='List of prompts', required=True)
     parser.add_argument('--source', type=str, help='Source file', required=True)
     parser.add_argument('--conf', type=float, help='Confidence threshold', default=0.07)
@@ -15,7 +16,7 @@ def main():
     args = parser.parse_args()
 
     # Load model
-    model = YOLO('yolov8l-world.pt')
+    model = YOLO(args.model)
 
     # Set classes based on prompt list
     model.set_classes(args.prompt_list)
